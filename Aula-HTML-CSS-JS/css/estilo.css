@@ -1,7 +1,25 @@
 @charset "UTF-8";
 
-table, th, td {
-    border: 1px solid black;
-    width: 40%;
-    height: 100%;
+
+nav#menu h1 { /*esconder a escrita mas deixar mecanismos de buscas*/
+    display: none;
+}
+
+nav#menu { /*formatação do menu*/
+    display: block; /*menu como bloco flutuador*/
+}
+
+nav#menu ul { /*formatação do menu - ul*/
+    list-style: none /*tirar marcadores*/
+    text-transform: uppercase; /*letra maiuscula*/
+    position: absolute; /*passar acima dos doc*/
+    top: 0px; /*colocar no topo*/
+    right: 20px; /*colocar na direita*/
+}
+
+nav#menu li { /*de vertical para horizontal*/
+    display: inline-block; /*na mesma linha*/
+    background-color:aliceblue; /*cor*/
+    padding: 10px; /*espaços entre cor e letras*/
+    margin: 2px; /*espaço entre botões*/
 }
